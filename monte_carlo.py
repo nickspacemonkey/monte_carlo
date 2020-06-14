@@ -18,9 +18,9 @@ def getInput():
     equity = 'My portfolio'
     price = 1000
     sdev = 0.0203416
-    months = 24
+    months = 240
     simulations = 100
-    ret = 0.299072
+    ret = 0.07
 
     print("Calculating...")
 
@@ -42,8 +42,6 @@ def analysis(inputs):
             new_price = new_price*(1+norminv+inputs[5])
             count += 1
             prices.append(new_price)
-
-            print(new_price)
 
         # Adds list of current simulation to overall list of results
         results.append(prices)
